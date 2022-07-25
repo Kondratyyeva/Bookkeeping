@@ -1,5 +1,4 @@
 # Digital bookkeeping
-Web application for digital bookkeeping. Librarians should be able to register readers, give them books and release books (after the reader returns the book back to the library).
 # Functional:
 1) Pages for adding, changing and deleting a person/book. All fields must be validated - using @Valid and Spring Validator, if required.
 2) A page with a list of all people/books (people/books are clickable - when clicked, the user goes to the person's/book's page).
