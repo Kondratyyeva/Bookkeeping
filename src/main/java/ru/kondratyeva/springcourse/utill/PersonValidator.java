@@ -9,6 +9,7 @@ import ru.kondratyeva.springcourse.models.Person;
 
 import java.util.Optional;
 
+//валидация форм для редактирования и создания людей
 @Component
 public class PersonValidator implements Validator {
     private final PersonDAO personDAO;

@@ -7,6 +7,7 @@ import org.springframework.validation.Validator;
 import ru.kondratyeva.springcourse.dao.BookDAO;
 import ru.kondratyeva.springcourse.models.Book;
 
+//валидация форм для редактирования и создания книг
 @Component
 public class BookValidator implements Validator {
     private final BookDAO bookDAO;
