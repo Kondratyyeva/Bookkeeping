@@ -1,6 +1,8 @@
 package ru.kondratyeva.springcourse.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.graphql.data.method.annotation.Argument;
+import org.springframework.graphql.data.method.annotation.QueryMapping;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -12,6 +14,7 @@ import ru.kondratyeva.springcourse.models.Person;
 import ru.kondratyeva.springcourse.utill.BookValidator;
 
 import javax.validation.Valid;
+import java.util.List;
 
 @Controller
 @RequestMapping("/books")
@@ -46,6 +49,8 @@ public class BookController {
     public String create(@ModelAttribute("book") Book book){
         return "/books/new";
     }
+
+
     @PostMapping()
     public String add(@ModelAttribute("book") @Valid Book book, BindingResult bindingResult){
         bookValidator.validate(book, bindingResult);

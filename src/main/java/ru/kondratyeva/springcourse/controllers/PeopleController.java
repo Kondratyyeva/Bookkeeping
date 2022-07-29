@@ -1,6 +1,7 @@
 package ru.kondratyeva.springcourse.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.graphql.data.method.annotation.QueryMapping;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -46,7 +47,6 @@ public class PeopleController {
         }
         return "people/show";
     }
-
     @GetMapping("/new")
     public String newPerson(@ModelAttribute("person") Person person) {
         return "people/new";
