@@ -9,9 +9,7 @@ import ru.kondratyeva.springcourse.models.Person;
 
 import java.util.List;
 
-/**
- * @author Neil Alishev
- */
+//реализация функционала работы с таблицей Person
 @Component
 public class PersonDAO {
 

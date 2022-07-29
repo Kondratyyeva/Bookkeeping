@@ -9,6 +9,7 @@ import ru.kondratyeva.springcourse.models.Person;
 
 import java.util.List;
 
+//реализация функционала работы с таблицей Book
 @Component
 public class BookDAO {
     private final JdbcTemplate jdbcTemplate;

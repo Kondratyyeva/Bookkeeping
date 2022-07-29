@@ -15,6 +15,7 @@ import ru.kondratyeva.springcourse.utill.PersonValidator;
 import javax.validation.Valid;
 import java.util.List;
 
+/*Контроллер для обработки rest-запросов к сущности Person*/
 @Controller
 @RequestMapping("/people")
 public class PeopleController {
