@@ -10,8 +10,4 @@ public class BookkeepingApplication {
     public static void main(String[] args) {
         SpringApplication.run(BookkeepingApplication.class, args);
     }
-   /* @Bean
-    public JdbcTemplate jdbcTemplate(){
-        return new JdbcTemplate();
-    }*/
 }
