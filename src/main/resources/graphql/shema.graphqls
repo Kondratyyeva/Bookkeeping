@@ -1,0 +1,30 @@
+type Book {
+id: ID!,
+name: String,
+author: String,
+year: String
+}
+type Person {
+user_id: ID!,
+fullName: String,
+yearOfBirth: Int
+}
+
+type Query {
+    getBooks:[Book]
+    getBook(id:Int):Book
+    getPeople:[Person]
+    getPerson(user_id:Int):Person
+    getPersonBooks(user_id:Int):[Book]
+}
+
+type Mutation {
+    addBook(name: String!, author: String!, year: Int): Book
+    addPerson(fullName: String!, yearOfBirth: Int): Person
+    editBook(id: Int,name: String!, author: String!, year: Int):Book
+    editPerson(user_id: Int,fullName: String!, yearOfBirth: Int): Person
+    deleteBook(id: Int):[Book]
+    deletePerson(user_id: Int):[Person]
+    deleteOwner(id: Int): Book
+    addOwner(id: Int, user_id: Int): Book
+}
