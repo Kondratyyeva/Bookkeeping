@@ -5,6 +5,8 @@ import graphql.annotations.annotationTypes.GraphQLID;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Person {
     private int user_id;
@@ -12,7 +14,6 @@ public class Person {
     private String fullName;
     @Min(value=0,message="Год должен быть больше 0")
     private int yearOfBirth;
-
     public String getFullName() {
         return fullName;
     }
@@ -28,8 +29,8 @@ public class Person {
     public void setYearOfBirth(int yearOfBirth) {
         this.yearOfBirth = yearOfBirth;
     }
-    public Person() {
 
+    public Person() {
     }
     public Person(String fullName, int yearOfBirth) {
         this.fullName = fullName;

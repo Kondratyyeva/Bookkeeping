@@ -14,9 +14,6 @@ public class Book {
     private String author;
     @Min(value=0,message="Год должен быть больше 0")
     private int year;
-
-    private Person owner;
-
     public Book(){
 
     }
@@ -59,11 +56,4 @@ public class Book {
         this.year = year;
     }
 
-    public Person getOwner() {
-        return owner;
-    }
-
-    public void setOwner(Person owner) {
-        this.owner = owner;
-    }
 }
